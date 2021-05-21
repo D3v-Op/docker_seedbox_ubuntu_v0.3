@@ -121,3 +121,50 @@ apt-get -qqy install \
       wireguard-tools && \
 apt-get -qq update
 ###
+
+
+
+echo ; \
+echo ; \
+echo ; \
+echo ' ⟩   Installing Rclone ... ' ; \
+echo ; \
+echo ; \
+echo
+
+curl https://rclone.org/install.sh | bash &> /dev/null ; \
+apt-get -qq update
+###
+
+
+
+echo ; \
+echo ; \
+echo ; \
+echo ' ⟩   Running Update , Upgrade & Fixing Missing / Broken ... ' ; \
+echo ; \
+echo ; \
+echo
+
+apt-get -qq update ; \
+apt-get -qqy upgrade ;\
+apt-get -qq update ; \
+apt-get -qqy install --fix-missing --fix-broken ; \
+apt-get -qq update
+###
+
+
+
+echo ; \
+echo ; \
+echo ; \
+echo ' ⟩   SET UP COMPLETED  ' ; \
+echo ; \
+echo ; \
+echo
+
+
+
+###########################################################################################################################################################################################################################################################################################################################################################################################
+
+
