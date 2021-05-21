@@ -24,7 +24,7 @@ cd /path/ && \
 dpkg -i /path/c*.deb && \
 apt-get -qqy install --fix-broken && \
 apt-get -qq update && \
-DEBIAN_FRONTEND=noninteractive \
+DEBIAN_FRONTEND=noninteractive && \
 apt-get -qqy install \
   desktop-base \
   xfce4 \
