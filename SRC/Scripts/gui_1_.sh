@@ -16,6 +16,11 @@ echo
 
 ### Setting Up Chrome Remote Desktop
 
+apt-get -qq update && \
+wget \
+  https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb && \
+dpkg --install chrome-remote-desktop_current_amd64.deb
+apt-get -qqy install --fix-broken
 
 
 
