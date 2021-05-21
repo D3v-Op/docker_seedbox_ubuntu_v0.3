@@ -26,8 +26,9 @@ apt-get -qqy install --fix-broken && \
 apt-get -qq update && \
 DEBIAN_FRONTEND=noninteractive \
 apt-get -qqy install \
+  desktop-base \
   xfce4 \
-  desktop-base && \
+  xscreensaver && \
 bash -c \
   'echo \
     "exec /etc/X11/Xsession /usr/bin/xfce4-session" \
