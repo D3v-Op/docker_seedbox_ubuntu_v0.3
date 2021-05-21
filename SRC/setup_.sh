@@ -73,6 +73,51 @@ apt-get -qqy install \
       python3.9 \
       python3-pip \
       software-properties-common \
-      tzdata ; \
+      tzdata && \
+apt-get -qq update
+###
+
+
+
+### Setting Up Time_Zone
+
+rm -rf /etc/localtime && \
+ln -s /usr/share/zoneinfo/Asia/Kolkata /etc/localtime
+###
+
+
+
+echo ; \
+echo ; \
+echo ; \
+echo ' ⟩   Installing Extra Libs ... ' ; \
+echo ; \
+echo ; \
+echo
+
+apt-get -qqy install \
+      apt-transport-https \
+      ca-certificates \
+      ffmpeg \
+      fuse \
+      git \
+      gnupg \
+      gnupg2 \
+      neofetch \
+      nginx \
+      nmap \
+      openssh-server \
+      openssl \
+      screen \
+      ssh \
+      qrencode \
+      tar \
+      tmux \
+      unzip \
+      zip \
+      unrar \
+      rar \
+      wireguard \
+      wireguard-tools && \
 apt-get -qq update
 ###
