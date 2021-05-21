@@ -19,9 +19,9 @@ echo
 apt-get -qq update && \
 wget \
   https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb && \
-dpkg --install chrome-remote-desktop_current_amd64.deb
-apt-get -qqy install --fix-broken
-
+dpkg --install chrome-remote-desktop_current_amd64.deb && \
+apt-get -qqy install --fix-broken && \
+apt-get -qq update
 
 
 
