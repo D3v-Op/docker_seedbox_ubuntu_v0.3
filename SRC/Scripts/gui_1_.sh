@@ -21,7 +21,7 @@ wget \
   https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb \
     -O /path/ && \
 cd /path/ && \
-dpkg --install chrome-remote-desktop_current_amd64.deb && \
+dpkg -i /path/c*.deb && \
 apt-get -qqy install --fix-broken && \
 apt-get -qq update && \
 DEBIAN_FRONTEND=noninteractive \
